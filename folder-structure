@@ -1,0 +1,12 @@
+kimono-dao/
+│
+├── docs/                # DAO principles, whitepaper, proposal templates
+├── designs/             # Hoodie mockups, shrine packaging, brand assets
+├── contracts/           # Smart contract stubs (future use)
+├── frontend/            # Website or dashboard (when built)
+├── governance/          # Voting systems, proposal history
+├── workflows/           # Automation logic, Notion/Make.com/Dify flows
+├── lore/                # Hoodie-Verse lore, character bios, archetypes
+├── assets/              # Fonts, images, logos, packaging files
+│
+└── README.md
