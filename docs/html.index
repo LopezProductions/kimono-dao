@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kimono DAO Portals</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0a0f0d;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      background-image: url('background.jpg'); /* Optional fog/mountain background */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .portal-container {
+      display: flex;
+      gap: 4rem;
+    }
+
+    .portal {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      background-image: url('https://sandbox.openai.com/mnt/data/A_2D_digital_illustration_in_pixel_art_style_featu.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .swirl {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      animation: subtleSpin 30s linear infinite;
+    }
+
+    .portal:hover .swirl {
+      animation: subtleSpin 6s linear infinite;
+    }
+
+    @keyframes subtleSpin {
+      from { transform: translate(-50%, -50%) rotate(0deg); }
+      to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    .label {
+      position: absolute;
+      bottom: 10px;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      color: #f0f0f0;
+      text-shadow: 0 0 6px #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="portal-container">
+    <a href="https://www.certifieddegen.store" target="_blank" class="portal">
+      <div class="swirl" style="background: radial-gradient(circle, #ff6600 0%, #ff3300 100%)"></div>
+      <div class="label">Certified<br>Degen Store</div>
+    </a>
+    <a href="#" class="portal">
+      <div class="swirl" style="background: radial-gradient(circle, #00ccff 0%, #0066cc 100%)"></div>
+      <div class="label">Hoodie-Verse</div>
+    </a>
+  </div>
+</body>
+</html>
