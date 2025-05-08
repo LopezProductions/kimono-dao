@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enter the Dojo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to top, #c2b280, #ffffff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      transition: background 1s ease-in-out;
+    }
+
+    .scene {
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    .pathway {
+      width: 60%;
+      margin: 20px auto;
+      border-top: 5px dashed #999;
+    }
+
+    .enter-button {
+      margin-top: 30px;
+      padding: 12px 28px;
+      font-size: 1.1rem;
+      background: #222;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .enter-button:hover {
+      background: #444;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+  <script>
+    function enterDojo() {
+      window.location.href = "dojo_inside.html";
+    }
+  </script>
+</head>
+<body>
+  <div class="scene">
+    <h1>🌸 Welcome to the Kimono Garden</h1>
+    <p>The mist begins to clear, revealing a path ahead...</p>
+    <div class="pathway"></div>
+    <button class="enter-button" onclick="enterDojo()">Enter the Dojo</button>
+  </div>
+</body>
+</html>
