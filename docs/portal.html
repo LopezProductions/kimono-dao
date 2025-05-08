@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal Room</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0d0d0d;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('portal_room_placeholder.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .portal-container {
+      display: flex;
+      gap: 3rem;
+    }
+
+    .portal {
+      width: 180px;
+      height: 300px;
+      background: rgba(0, 0, 0, 0.4);
+      border: 3px solid #444;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .portal:hover {
+      transform: scale(1.05) rotate(1deg);
+    }
+
+    .swirl {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      animation: subtleSpin 12s linear infinite;
+    }
+
+    .label {
+      margin-top: 1rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    @keyframes subtleSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="portal-container">
+    <a href="https://www.certifieddegen.store" class="portal" target="_blank">
+      <div class="swirl" style="background: radial-gradient(circle, #ff6600 0%, #ff3300 100%)"></div>
+      <div class="label">Certified<br>Degen Store</div>
+    </a>
+    <a href="#" class="portal">
+      <div class="swirl" style="background: radial-gradient(circle, #00ccff 0%, #0066cc 100%)"></div>
+      <div class="label">Hoodie-Verse</div>
+    </a>
+  </div>
+</body>
+</html>
