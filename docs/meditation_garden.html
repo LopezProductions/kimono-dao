@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meditation Garden - KimonoDAO</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+      background-image: url('/mnt/data/the garden.jpg');
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 1em;
+      background: rgba(0, 0, 0, 0.6);
+      font-size: 1.5em;
+      border-bottom: 1px solid #444;
+    }
+    .paths {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 10vh;
+      padding: 2em;
+    }
+    .path {
+      width: 25%;
+      padding: 1em;
+      background: rgba(0, 0, 0, 0.5);
+      border: 2px solid #7f5af0;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .path:hover {
+      transform: scale(1.05);
+      background-color: rgba(127, 90, 240, 0.3);
+    }
+    .footer {
+      position: absolute;
+      bottom: 1em;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    The Mist Clears Before You — Welcome to the Garden of Flow
+  </header>
+
+  <section class="paths">
+    <div class="path" onclick="location.href='left_path_meditation.html'">
+      <h2>← Meditation Stones</h2>
+      <p>Reflect, write, and shape the DAO's future.</p>
+    </div>
+
+    <div class="path" onclick="location.href='forward_path_dojo.html'">
+      <h2>↑ Cross the Bridge</h2>
+      <p>Approach the dojo. Only kimono holders may pass beyond the gate.</p>
+    </div>
+
+    <div class="path" onclick="location.href='right_path_bamboo.html'">
+      <h2>→ Bamboo Grove</h2>
+      <p>Embrace gratitude, feng shui, and find your daily flow.</p>
+    </div>
+  </section>
+
+  <div class="footer">
+    KimonoDAO &copy; 2025 — The path to mastery begins within.
+  </div>
+</body>
+</html>
