@@ -9,13 +9,13 @@
       margin: 0;
       font-family: 'Courier New', monospace;
       background-color: #121212;
-      background-image: url('/mnt/data/the garden.jpg');
+      background-image: url('images/left-path-meditation.png');
       background-size: cover;
       background-position: center;
       color: #f0f0f0;
     }
     .overlay {
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(0, 0, 0, 0.75);
       padding: 2em;
       margin: 5vh auto;
       max-width: 600px;
@@ -25,6 +25,11 @@
     h1, h2 {
       text-align: center;
       color: #7f5af0;
+      margin-bottom: 0.5em;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 1em;
     }
     textarea, button {
       width: 100%;
@@ -36,7 +41,7 @@
     }
     textarea {
       resize: vertical;
-      min-height: 150px;
+      min-height: 120px;
     }
     button {
       background: #7f5af0;
@@ -53,16 +58,12 @@
   <div class="overlay">
     <h1>Meditation Stones</h1>
     <p>You hear the soft sound of water and wind. Take a moment to reflect.</p>
-
     <h2>Morning Reflection</h2>
     <textarea placeholder="What do you want to accomplish today?"></textarea>
-
     <h2>Letting Go</h2>
     <textarea placeholder="What burden will you release today?"></textarea>
-
     <h2>DAO Vision Prompt</h2>
     <textarea placeholder="What tools or experiences would you like to see in the KimonoDAO dojo?"></textarea>
-
     <button onclick="alert('Reflection saved. The DAO thanks you.')">Submit Reflection</button>
   </div>
 </body>
