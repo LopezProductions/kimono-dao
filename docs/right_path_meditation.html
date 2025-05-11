@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bamboo Grove - KimonoDAO</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background-color: #101010;
+      background-image: url('/mnt/data/the garden.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #f0f0f0;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.75);
+      padding: 2em;
+      margin: 5vh auto;
+      max-width: 600px;
+      border-radius: 10px;
+      border: 1px solid #7f5af0;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #7f5af0;
+    }
+    textarea, button {
+      width: 100%;
+      padding: 1em;
+      margin-top: 1em;
+      border: none;
+      border-radius: 5px;
+      font-family: monospace;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    button {
+      background: #7f5af0;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #a78bfa;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Bamboo Grove</h1>
+    <p>The wind moves through the stalks... breathe deep and center yourself.</p>
+
+    <h2>Gratitude Practice</h2>
+    <textarea placeholder="What are you grateful for today?"></textarea>
+
+    <h2>Flow Intentions</h2>
+    <textarea placeholder="What will you focus on to stay in flow today?"></textarea>
+
+    <h2>Productivity Ritual</h2>
+    <textarea placeholder="What’s one small system or habit you'll apply to be more effective today?"></textarea>
+
+    <button onclick="alert('Gratitude recorded. Your flow begins now.')">Begin the Day</button>
+  </div>
+</body>
+</html>
